@@ -17,6 +17,10 @@ ENV VARS:
 import psycopg2
 import time
 import os
+import subprocess
+import sys
+
+subprocess.check_call([sys.executable, "-m", "pip", "install", "psycopg2-binary"])
 
 DB_CONNECTION = os.environ["DB_CONNECTION"]
 BATCH_SIZE = 500
