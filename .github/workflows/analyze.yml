@@ -1,2 +1,2 @@
-- name: Install dependencies
-  run: pip install psycopg2-binary
+name: Install dependencies
+run: pip install psycopg2-binary
